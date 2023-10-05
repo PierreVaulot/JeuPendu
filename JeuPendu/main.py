@@ -1,13 +1,18 @@
 """
 Created on Thu Oct  5 09:09:43 2023
-
 @author: pierre.vaulot
 """
 #Main programme
 
-f=open("mot.txt","r")
+
+from jeu import pendu
+from jeu import meilleurScore
+
+
+
+f=open("mots.txt","r")
 dico=f.readlines()
 best=0
 
-Pendu()
-MeilleurScore(best)
+pendu()
+meilleurScore(best)
